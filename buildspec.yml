@@ -23,7 +23,7 @@ phases:
       - |
         echo '[
           {
-            "name": "container-test-app",
+            "name": "container-20260826-task",
             "imageUri": "'${ECR_REPOSITORY}':latest"
           }
         ]' > imagedefinitions.json
