@@ -20,7 +20,7 @@ phases:
       - docker push ${ECR_REPOSITORY}:latest
       - echo Build completed on `date`
       - echo Creating imagedefinitions.json...
-      - printf '[{"name":"container-20260826-task","imageUri":"%s:latest"}]' $ECR_REPOSITORY > imagedefinitions.json
+      - printf '[{"name":"container-20260826-app","imageUri":"%s:latest"}]' $ECR_REPOSITORY > imagedefinitions.json
       - echo imagedefinitions.json created.
 
 artifacts:
